@@ -1,0 +1,30 @@
+<! DOCKTYPE HTML>
+<head>
+    <title>StarSurfer</title>
+    <link rel="stylesheet" type="text/css" href="starDrawer.css">
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous">
+
+    </script>
+</head>
+<body>
+    <canvas id="can"></canvas>
+    <h1>STAR SURFER</h1>
+
+    <div id="options">
+        <label for="throttle">Initial Spawn Velocity:</label>
+        <input type="number" class="fields" id="throttle" value="1" />
+        <label for="spawnRadius">Star Spawn Radius:</label>
+        <input type="number" class="fields" id="spawnRadius" value="500" step="100"/>
+        <label for="acceleration">Acceleration:</label>
+        <input type="number" class="fields" id="acceleration" value=".0001" step=".0001" />
+        <label for="sizeThrottle">Star Size:</label>
+        <input type="number" class="fields" id="sizeThrottle" value="1.5" step=".5" />
+        <input type="button" id="update" value="Update Fields"/>
+        <input type="button" id="reset" value="Reset"/>
+        <input type="button" id="hyperspeed" value="Jump to Hyperspace"/>
+    </div>
+    <script src="starDrawer.js"></script>
+</body>
